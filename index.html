@@ -35,7 +35,7 @@
       width: 100%;
       height: 100%;
       z-index: 0;
-      background: radial-gradient(ellipse at top, #1a1a2e 0%, #0a0a0f 50%);
+      background: radial-gradient(ellipse at top, #2d1b3d 0%, #0a0a0f 50%);
     }
 
     .grid-overlay {
@@ -43,8 +43,8 @@
       width: 100%;
       height: 100%;
       background-image: 
-        linear-gradient(rgba(99, 102, 241, 0.03) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(99, 102, 241, 0.03) 1px, transparent 1px);
+        linear-gradient(rgba(168, 85, 247, 0.05) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(251, 146, 60, 0.05) 1px, transparent 1px);
       background-size: 40px 40px;
       opacity: 0.5;
     }
@@ -68,7 +68,7 @@
     .navbar.scrolled {
       padding: 15px 0;
       background: rgba(10, 10, 15, 0.95);
-      border-bottom: 1px solid rgba(99, 102, 241, 0.2);
+      border-bottom: 1px solid rgba(168, 85, 247, 0.3);
     }
 
     .nav-content {
@@ -141,10 +141,10 @@
     .hero-badge {
       display: inline-block;
       padding: 8px 16px;
-      background: rgba(99, 102, 241, 0.1);
-      border: 1px solid rgba(99, 102, 241, 0.2);
+      background: rgba(168, 85, 247, 0.15);
+      border: 1px solid rgba(251, 146, 60, 0.3);
       border-radius: 100px;
-      color: #6366f1;
+      color: #fb923c;
       font-size: 13px;
       font-weight: 600;
       text-transform: uppercase;
@@ -189,13 +189,14 @@
 
     .server-info-card:hover {
       background: rgba(255, 255, 255, 0.05);
-      border-color: rgba(99, 102, 241, 0.3);
+      border-color: rgba(168, 85, 247, 0.4);
       transform: translateY(-2px);
+      box-shadow: 0 8px 25px rgba(168, 85, 247, 0.2);
     }
 
     .info-label {
       font-size: 13px;
-      color: #6366f1;
+      color: #fb923c;
       text-transform: uppercase;
       letter-spacing: 1px;
       margin-bottom: 10px;
@@ -211,15 +212,22 @@
     }
 
     .server-logo-img {
-      max-width: 400px;
-      width: 100%;
-      height: auto;
-      margin: 20px 0;
-      filter: drop-shadow(0 10px 30px rgba(99, 102, 241, 0.3));
+      max-width: 300px;
+      width: 300px;
+      height: 300px;
+      margin: 20px auto;
+      object-fit: contain;
+      border-radius: 50%;
+      border: 4px solid transparent;
+      background: linear-gradient(#0a0a0f, #0a0a0f) padding-box,
+                  linear-gradient(135deg, #a855f7 0%, #fb923c 100%) border-box;
+      padding: 20px;
+      filter: drop-shadow(0 10px 40px rgba(168, 85, 247, 0.4));
+      display: block;
     }
 
     .copy-btn {
-      background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+      background: linear-gradient(135deg, #a855f7 0%, #fb923c 100%);
       color: white;
       border: none;
       padding: 18px 48px;
@@ -233,7 +241,7 @@
       text-transform: uppercase;
       position: relative;
       overflow: hidden;
-      box-shadow: 0 8px 25px rgba(99, 102, 241, 0.25);
+      box-shadow: 0 8px 25px rgba(168, 85, 247, 0.3);
     }
 
     .copy-btn::before {
@@ -252,9 +260,9 @@
     }
 
     .copy-btn:hover {
-      background: linear-gradient(135deg, #5558e3 0%, #7c3aed 100%);
+      background: linear-gradient(135deg, #9333ea 0%, #f97316 100%);
       transform: translateY(-3px);
-      box-shadow: 0 12px 35px rgba(99, 102, 241, 0.4);
+      box-shadow: 0 12px 35px rgba(168, 85, 247, 0.5);
     }
 
     .copy-btn:active {
@@ -281,10 +289,10 @@
     .section-label {
       display: inline-block;
       padding: 6px 14px;
-      background: rgba(99, 102, 241, 0.1);
-      border: 1px solid rgba(99, 102, 241, 0.2);
+      background: rgba(168, 85, 247, 0.15);
+      border: 1px solid rgba(251, 146, 60, 0.3);
       border-radius: 100px;
-      color: #6366f1;
+      color: #fb923c;
       font-size: 12px;
       font-weight: 600;
       text-transform: uppercase;
@@ -318,8 +326,9 @@
 
     .step-card:hover {
       background: rgba(255, 255, 255, 0.05);
-      border-color: rgba(99, 102, 241, 0.3);
+      border-color: rgba(168, 85, 247, 0.4);
       transform: translateY(-5px);
+      box-shadow: 0 10px 30px rgba(168, 85, 247, 0.2);
     }
 
     .step-number {
@@ -328,10 +337,10 @@
       justify-content: center;
       width: 40px;
       height: 40px;
-      background: rgba(99, 102, 241, 0.1);
-      border: 1px solid rgba(99, 102, 241, 0.3);
+      background: rgba(168, 85, 247, 0.15);
+      border: 1px solid rgba(251, 146, 60, 0.4);
       border-radius: 12px;
-      color: #6366f1;
+      color: #fb923c;
       font-size: 18px;
       font-weight: 700;
       margin-bottom: 25px;
@@ -362,7 +371,7 @@
 
     .code-label {
       font-size: 11px;
-      color: #6366f1;
+      color: #a855f7;
       text-transform: uppercase;
       letter-spacing: 1px;
       font-weight: 600;
@@ -394,8 +403,9 @@
 
     .feature-card:hover {
       background: rgba(255, 255, 255, 0.05);
-      border-color: rgba(99, 102, 241, 0.3);
+      border-color: rgba(168, 85, 247, 0.4);
       transform: translateY(-5px);
+      box-shadow: 0 10px 30px rgba(168, 85, 247, 0.2);
     }
 
     .feature-title {
@@ -452,15 +462,16 @@
 
     .team-card:hover {
       background: rgba(255, 255, 255, 0.05);
-      border-color: rgba(99, 102, 241, 0.3);
+      border-color: rgba(168, 85, 247, 0.4);
       transform: translateY(-5px);
+      box-shadow: 0 10px 30px rgba(168, 85, 247, 0.2);
     }
 
     .team-avatar {
       width: 100px;
       height: 100px;
       margin: 0 auto 20px;
-      background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+      background: linear-gradient(135deg, #a855f7 0%, #fb923c 100%);
       border-radius: 50%;
       display: flex;
       align-items: center;
@@ -480,7 +491,7 @@
 
     .team-role {
       font-size: 14px;
-      color: #6366f1;
+      color: #fb923c;
       font-weight: 600;
       text-transform: uppercase;
       letter-spacing: 0.5px;
@@ -642,7 +653,9 @@
       }
 
       .server-logo-img {
-        max-width: 280px;
+        max-width: 220px;
+        width: 220px;
+        height: 220px;
       }
 
       .tagline {
@@ -972,5 +985,5 @@
       });
     }
   </script>
- <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9a867c450059b9ff',t:'MTc2NDgwMDc4NC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+ <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9a8683579056bc4c',t:'MTc2NDgwMTA3NC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
 </html>
